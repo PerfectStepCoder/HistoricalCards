@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280B77241E7193C300D56CC3 /* IactionsCollecriot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B77231E7193C300D56CC3 /* IactionsCollecriot.swift */; };
 		283D12481E1A8CB0004FAAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283D12471E1A8CB0004FAAB9 /* AppDelegate.swift */; };
 		283D124A1E1A8CB0004FAAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283D12491E1A8CB0004FAAB9 /* ViewController.swift */; };
 		283D124D1E1A8CB0004FAAB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283D124B1E1A8CB0004FAAB9 /* Main.storyboard */; };
 		283D124F1E1A8CB0004FAAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283D124E1E1A8CB0004FAAB9 /* Assets.xcassets */; };
 		283D12521E1A8CB0004FAAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283D12501E1A8CB0004FAAB9 /* LaunchScreen.storyboard */; };
-		283D125B1E1A8D42004FAAB9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283D125A1E1A8D42004FAAB9 /* Event.swift */; };
-		28C655951E6FC04F00DF7BCA /* HistoricalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C655941E6FC04F00DF7BCA /* HistoricalCard.swift */; };
-		28C655981E6FF52A00DF7BCA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C655971E6FF52A00DF7BCA /* Category.swift */; };
-		28C6559A1E6FF55400DF7BCA /* HistoricalCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C655991E6FF55400DF7BCA /* HistoricalCards.swift */; };
+		2875552F1E713E0700DE16F2 /* View in Resources */ = {isa = PBXBuildFile; fileRef = 2875552E1E713E0700DE16F2 /* View */; };
+		287555311E713E3800DE16F2 /* Presenter in Resources */ = {isa = PBXBuildFile; fileRef = 287555301E713E3800DE16F2 /* Presenter */; };
+		287555331E713E5300DE16F2 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 287555321E713E5300DE16F2 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280B77231E7193C300D56CC3 /* IactionsCollecriot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IactionsCollecriot.swift; sourceTree = "<group>"; };
 		283D12441E1A8CB0004FAAB9 /* HistoricalCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HistoricalCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283D12471E1A8CB0004FAAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		283D12491E1A8CB0004FAAB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,10 +27,9 @@
 		283D124E1E1A8CB0004FAAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283D12511E1A8CB0004FAAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283D12531E1A8CB0004FAAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		283D125A1E1A8D42004FAAB9 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		28C655941E6FC04F00DF7BCA /* HistoricalCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCard.swift; sourceTree = "<group>"; };
-		28C655971E6FF52A00DF7BCA /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		28C655991E6FF55400DF7BCA /* HistoricalCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCards.swift; sourceTree = "<group>"; };
+		2875552E1E713E0700DE16F2 /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
+		287555301E713E3800DE16F2 /* Presenter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presenter; sourceTree = "<group>"; };
+		287555321E713E5300DE16F2 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,34 +62,18 @@
 		283D12461E1A8CB0004FAAB9 /* HistoryCards */ = {
 			isa = PBXGroup;
 			children = (
-				28C655961E6FF4E400DF7BCA /* New Group */,
-				283D12591E1A8CFF004FAAB9 /* Model */,
+				287555321E713E5300DE16F2 /* Model */,
+				287555301E713E3800DE16F2 /* Presenter */,
+				2875552E1E713E0700DE16F2 /* View */,
 				283D12471E1A8CB0004FAAB9 /* AppDelegate.swift */,
 				283D12491E1A8CB0004FAAB9 /* ViewController.swift */,
 				283D124B1E1A8CB0004FAAB9 /* Main.storyboard */,
 				283D124E1E1A8CB0004FAAB9 /* Assets.xcassets */,
 				283D12501E1A8CB0004FAAB9 /* LaunchScreen.storyboard */,
 				283D12531E1A8CB0004FAAB9 /* Info.plist */,
+				280B77231E7193C300D56CC3 /* IactionsCollecriot.swift */,
 			);
 			path = HistoryCards;
-			sourceTree = "<group>";
-		};
-		283D12591E1A8CFF004FAAB9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				283D125A1E1A8D42004FAAB9 /* Event.swift */,
-				28C655941E6FC04F00DF7BCA /* HistoricalCard.swift */,
-				28C655971E6FF52A00DF7BCA /* Category.swift */,
-				28C655991E6FF55400DF7BCA /* HistoricalCards.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		28C655961E6FF4E400DF7BCA /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Dmitrii;
 				TargetAttributes = {
 					283D12431E1A8CB0004FAAB9 = {
@@ -151,9 +135,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287555331E713E5300DE16F2 /* Model in Resources */,
 				283D12521E1A8CB0004FAAB9 /* LaunchScreen.storyboard in Resources */,
 				283D124F1E1A8CB0004FAAB9 /* Assets.xcassets in Resources */,
+				287555311E713E3800DE16F2 /* Presenter in Resources */,
 				283D124D1E1A8CB0004FAAB9 /* Main.storyboard in Resources */,
+				2875552F1E713E0700DE16F2 /* View in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,11 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				283D124A1E1A8CB0004FAAB9 /* ViewController.swift in Sources */,
-				28C655981E6FF52A00DF7BCA /* Category.swift in Sources */,
-				283D125B1E1A8D42004FAAB9 /* Event.swift in Sources */,
-				28C6559A1E6FF55400DF7BCA /* HistoricalCards.swift in Sources */,
 				283D12481E1A8CB0004FAAB9 /* AppDelegate.swift in Sources */,
-				28C655951E6FC04F00DF7BCA /* HistoricalCard.swift in Sources */,
+				280B77241E7193C300D56CC3 /* IactionsCollecriot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +197,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -235,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -263,6 +248,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -279,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -293,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HistoryCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SuitCompany.HistoryCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HistoryCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SuitCompany.HistoryCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
