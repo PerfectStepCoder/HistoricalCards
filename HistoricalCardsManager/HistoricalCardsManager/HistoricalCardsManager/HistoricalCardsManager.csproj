@@ -70,8 +70,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\DataBase\StorageSQLiteDB.cs" />
     <Compile Include="Model\Event.cs" />
     <Compile Include="Model\HistoricalCard.cs" />
+    <Compile Include="Model\HistoricalCards.cs" />
+    <Compile Include="Model\Interfaces\InterfaceCRUD.cs" />
     <Compile Include="Model\Period.cs" />
     <Compile Include="Model\UniqueEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -99,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Enities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

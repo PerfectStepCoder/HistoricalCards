@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HistoricalCardsManager.Model
+namespace HistoricalCardsManager.Model.Interfaces
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    abstract class UniqueEntity
+    interface InterfaceCRUD
     {
 
     }

@@ -10,6 +10,18 @@ namespace HistoricalCardsManager.Model
     {
         string discription;
 
+        public int prop { get; set; }
+
+
+         // TODO: именованные параметры в методах
+    
+        // Nullable type int t = nullType ?? 0;
+         
+        // ref and out
+
+        // используй TryParse
+
+        
         
     }
 }
