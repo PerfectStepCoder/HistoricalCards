@@ -13,7 +13,7 @@ namespace HistoricalCardsManager.Model
             throw new NotImplementedException();
         }
 
-        // Пиши паттерн освобождения ресурсов Dispose Pattern (IDispose и using)
+        // Пиши паттерн освобождения ресурсов Dispose Pattern (IDispose и using) реализация интерфеса IDisposable
 
         // TryStartNoGCRegion
         // во время работы кода (тут указатели) не будет работать GC
