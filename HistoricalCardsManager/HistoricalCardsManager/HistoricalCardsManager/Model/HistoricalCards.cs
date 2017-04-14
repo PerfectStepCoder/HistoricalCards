@@ -13,6 +13,9 @@ namespace HistoricalCardsManager.Model
             throw new NotImplementedException();
         }
 
+        // Над методами которые выполняют долгую длительную работу обертывай в Task - патерн асинхонного вызова 4.5
+        // Используй dynamic если работаешь с питоном или Excel
+
         // Пиши паттерн освобождения ресурсов Dispose Pattern (IDispose и using) реализация интерфеса IDisposable
 
         // TryStartNoGCRegion
