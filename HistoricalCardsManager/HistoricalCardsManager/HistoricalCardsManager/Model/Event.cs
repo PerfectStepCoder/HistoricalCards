@@ -8,5 +8,6 @@ namespace HistoricalCardsManager.Model
 {
     class Event
     {
+
     }
 }

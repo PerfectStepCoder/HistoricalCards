@@ -8,6 +8,10 @@ namespace HistoricalCardsManager.Model.Interfaces
 {
     interface InterfaceCRUD
     {
+        void Add(HistoricalCard historicalCard);
+
+        void Add(HistoricalCards historicalCards);
+
 
     }
 }
