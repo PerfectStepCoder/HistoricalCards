@@ -1,8 +1,7 @@
 ﻿<Application x:Class="HistoricalCardsManager.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:HistoricalCardsManager"
-             StartupUri="View/MainWindow.xaml">
+             xmlns:local="clr-namespace:HistoricalCardsManager">
     <Application.Resources>
          
     </Application.Resources>

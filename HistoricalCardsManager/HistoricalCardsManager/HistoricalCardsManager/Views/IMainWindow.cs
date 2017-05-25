@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HistoricalCardsManager.Model
+namespace HistoricalCardsManager.Views
 {
-    class Event
+    public interface IMainWindow
     {
 
     }

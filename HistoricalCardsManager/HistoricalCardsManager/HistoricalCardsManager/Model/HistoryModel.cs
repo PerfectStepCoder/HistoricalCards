@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HistoricalCardsManager.Model.Interfaces;
 
 namespace HistoricalCardsManager.Model
 {
-    /// <summary>
-    /// Дерево категорий исторических карточек
-    /// </summary>
-    class Categories
+    public class HistoryModel : IModel
     {
-        
+
     }
 }
