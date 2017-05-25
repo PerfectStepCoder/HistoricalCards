@@ -32,14 +32,29 @@ namespace HistoricalCardsManager.Views
             EditCategory
         }
 
+        public void GetContextMenuForTreeCategories(ContextMenu contextMenu, TreeCategories treeCategories)
+        {
+            switch (treeCategories)
+            {
+                case TreeCategories.FirstCategoty:
+                    contextMenu.Items.Add(new MenuItem() { Header = "Добавить категорию" });
+                    break;
+                case TreeCategories.AddRootCategoty:
+                    break;
+                case TreeCategories.EditCategory:
+                    break;
+                default:
+                    break;
+            }
+        }
 
         private void treeViewCategories_ContextMenuOpening(object sender, ContextMenuEventArgs e)
         {
             TreeView treeViewCategories = sender as TreeView;
             if ( treeViewCategories.SelectedItem == null)
             {
-                treeViewCategories.ContextMenu = GetContextMenuForTreeCategories(TreeCategories.FirstCategoty);
-                treeViewCategories.ContextMenu.IsOpen = true;
+                GetContextMenuForTreeCategories(treeViewCategories.ContextMenu, TreeCategories.FirstCategoty);
+                //treeViewCategories.ContextMenu.IsOpen = true;
                 //MessageBoxResult result = MessageBox.Show("Нет выделлых узлов");
             }
             
@@ -47,24 +62,25 @@ namespace HistoricalCardsManager.Views
 
 
         #region Старый код
-            public ContextMenu GetContextMenuForTreeCategories(TreeCategories treeCategories)
-            {
-                ContextMenu contextMenu = new ContextMenu();
-                switch (treeCategories)
-                {
-                    case TreeCategories.FirstCategoty:
-                        contextMenu.Items.Add(new MenuItem() { Header = "Добавить категорию" });
-                        break;
-                    case TreeCategories.AddRootCategoty:
-                        break;
-                    case TreeCategories.EditCategory:
-                        break;
-                    default:
-                        break;
-                }
-                return contextMenu;
-            }
+
 
         #endregion
+
+        private void TreeCategoryContextMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MenuItem menuItem = sender as MenuItem;
+            switch (menuItem.Name)
+            {
+                case "createCategory":
+                    MessageBox.Show(menuItem.Name);
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void treeViewCategories_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

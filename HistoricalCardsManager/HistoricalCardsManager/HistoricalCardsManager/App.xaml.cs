@@ -8,6 +8,7 @@ using System.Windows;
 using HistoricalCardsManager.Presenters;
 using HistoricalCardsManager.Model;
 using HistoricalCardsManager.Views;
+using System.Globalization;
 
 namespace HistoricalCardsManager
 {
