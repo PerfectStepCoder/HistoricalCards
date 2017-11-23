@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace HistoricalCardsManager.Model.Enities
 {
+    public enum Era
+    {
+        BC,
+        AD
+    }
+
+    public enum Calendar
+    {
+        Unknown,
+        Gregorian,
+        Julian
+    }
+
     public class HistoryDateTime
     {
         public long Years { get; set; }
@@ -14,6 +27,14 @@ namespace HistoricalCardsManager.Model.Enities
 
         public int Day { get; set; }
 
-        public bool Era {get; set;}
-}
+        public int Hour { get; set; }
+
+        public int Minutes { get; set; }
+
+        public Era Epoch { get; set;}
+
+        public bool IsLeap { get; set; }
+
+        public Calendar Calendar { get; set; }
+    }
 }
